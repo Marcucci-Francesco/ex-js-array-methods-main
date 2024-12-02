@@ -21,3 +21,18 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+let classNumber = '';
+
+for (let student of students){
+  
+  const {id} = student;
+  if (id === 1){
+    classNumber = `'${student.class}'`;
+  }
+}
+
+console.log(classNumber);
+
+
+
