@@ -22,16 +22,9 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-let classNumber = '';
+const studentClass = students.find(student => student.name === 'Marco Lanci');
 
-for (let student of students){
-  
-  const {id} = student;
-  if (id === 1){
-    classNumber = `'${student.class}'`;
-  }
-}
-
+const classNumber = studentClass ? `'${studentClass.class}'` : null;
 console.log(classNumber);
 
 
